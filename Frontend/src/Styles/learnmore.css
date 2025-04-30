@@ -1,0 +1,137 @@
+/* learnmore.css */
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .main-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .intro-section, .info-section, .types-section {
+    margin-bottom: 3rem;
+  }
+  
+  .main-heading {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(90deg, purple, pink, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .calculate-button {
+    padding: 0.8rem 2rem;
+    background-color: #f5f5f5;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .calculate-button:hover {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  .sub-heading {
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 1rem;
+  }
+  
+  .small-heading {
+    font-size: 1.5rem;
+    color: #ff85c1;
+    margin-top: 2rem;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+  }
+  
+  .chart-and-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .big-o-chart img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 8px;
+    border: 1px solid white;
+  }
+  
+  .big-o-chart figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .complexity-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .excellent { background: lightgreen; color: black; }
+  .good { background: green; color: black; }
+  .fair { background: yellow; color: black; }
+  .bad { background: orange; color: black; }
+  .horrible { background: red; color: black; }
+  
+  .example-section {
+    margin-top: 2rem;
+  }
+  
+  .footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    background-color: #1a1a1a;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .line {
+    flex: 1;
+    height: 2px;
+    background-color: white;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }

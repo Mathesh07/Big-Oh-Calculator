@@ -1,0 +1,167 @@
+/* main.css */
+
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  header a {
+    color: #87c5ee;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Layout */
+  .editor-container {
+    display: flex;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    height: calc(100vh - 80px);
+  }
+  
+  /* Code editor section */
+  .code-editor {
+    flex: 1;
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    height: 100%;
+    overflow: auto;
+    border-radius: 10px; /* Sharp edges */
+    box-shadow: 0 0 4px #00000055;
+  }
+  
+  /* Right-side panel */
+  .output-container {
+    width: 35%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00000050;
+    
+    overflow:scroll ; /* hide accidental overflow */
+    word-wrap: break-word; /* make words wrap */
+    box-sizing: border-box; /* include padding inside width */
+  }
+  
+  /* Gradient title */
+  .output-container h1 {
+    font-size: 1.7rem;
+    background: linear-gradient(45deg, #ff00cc, #33ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .output-container h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button */
+  .calculate-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #b266ff, #ff66cc);
+    color: white;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  .calculate-button:hover {
+    opacity: 0.9;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.code-editor::-webkit-scrollbar,
+.output-container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* Hide scrollbar for Firefox */
+.code-editor {
+  scrollbar-width: none; /* Firefox */
+}
+
+.output-container {
+  scrollbar-width: none; /* Firefox */
+}
+
+  
+  /* Boxes for output */
+  .box {
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 50px;
+    color: #bdbeda;
+    font-family:Georgia, 'Times New Roman', Times, serif
+  }
+  
+  /* Explanation */
+  .explanation {
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 50px;
+    color: #bdbeda;
+    font-size: 0.95rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7;       /* More space between lines */
+    word-spacing: 1px;       /* Adds clean space between words */
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .editor-container {
+      flex-direction: column;
+    }
+  
+    .output-container {
+      width: 100%;
+    }
+  }
+  .box-spinner {
+    border: 3px solid white;
+    border-top: 3px solid wheat;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 0.8s linear infinite;
+    margin: 10px auto;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
