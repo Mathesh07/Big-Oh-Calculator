@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
-import Navbar from './Components/NavBar'
+import NavBar from './Components/NavBar'
 import LearnMore from './Pages/LearnMore'
 
 const App = () => {
   return (
     <BrowserRouter>
-    <Navbar />
+    <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/learnmore' element={<LearnMore />} />
