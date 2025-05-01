@@ -1,8 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import LearnMore from '../Pages/LearnMore'
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <header>
       <div className="container">
