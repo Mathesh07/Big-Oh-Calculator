@@ -7,7 +7,7 @@ const CalculateButton = ({ code }) => {
   const handleCalculate = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/calculate', {
+      const res = await fetch('https://your-backend.onrender.com/calculate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code }),
